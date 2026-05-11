@@ -165,3 +165,9 @@ nav a{
 .post-buttons button:last-child{
     background:red;
 }
+
+.post-detalle{
+    width:90%;
+    max-width:800px;
+    margin:40px auto;
+}
