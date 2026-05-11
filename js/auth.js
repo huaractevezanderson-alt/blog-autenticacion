@@ -101,27 +101,6 @@ if(currentUser && userName){
 }
 
 /* =========================
-   PROTEGER RUTAS
-========================= */
-
-const page = window.location.pathname.split("/").pop();
-
-if(page === "index.html" && !currentUser){
-
-    window.location.href = "login.html";
-
-}
-
-if(
-    (page === "login.html" || page === "register.html")
-    && currentUser
-){
-
-    window.location.href = "index.html";
-
-}
-
-/* =========================
    LOGOUT
 ========================= */
 
