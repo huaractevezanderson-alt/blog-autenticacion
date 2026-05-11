@@ -23,6 +23,8 @@
     width:100%;
     padding:12px;
     margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
 }
 
 .formulario button{
@@ -31,4 +33,6 @@
     border:none;
     background:#222;
     color:white;
+    border-radius:5px;
+    cursor:pointer;
 }
