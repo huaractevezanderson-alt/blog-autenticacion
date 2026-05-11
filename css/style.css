@@ -1,3 +1,41 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+}
+
+header{
+    background:#222;
+    color:white;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:15px;
+}
+
+.hero{
+    padding:50px;
+    text-align:center;
+}
+
+#posts-container{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+}
+
 .container{
     width:100%;
     height:100vh;
@@ -23,6 +61,8 @@
     width:100%;
     padding:12px;
     margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
 }
 
 .formulario button{
@@ -31,4 +71,26 @@
     border:none;
     background:#222;
     color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.formulario p{
+    margin-top:15px;
+    text-align:center;
+}
+
+.usuario-info{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.usuario-info button{
+    padding:10px;
+    border:none;
+    background:red;
+    color:white;
+    cursor:pointer;
+    border-radius:5px;
 }
