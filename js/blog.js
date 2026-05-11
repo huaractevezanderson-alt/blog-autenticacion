@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-console.log("Blog cargado correctamente");
-=======
 const postForm = document.getElementById("postForm");
 
 const postsContainer = document.getElementById("posts-container");
@@ -157,4 +154,3 @@ function editarPost(id){
 }
 
 mostrarPosts();
->>>>>>> feature/blog
