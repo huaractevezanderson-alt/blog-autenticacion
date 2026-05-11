@@ -24,7 +24,10 @@ if(registerForm){
         if(userExists){
 
             alert("El usuario ya existe");
+<<<<<<< HEAD
 
+=======
+>>>>>>> feature/blog
             return;
 
         }
@@ -73,7 +76,10 @@ if(loginForm){
         if(!validUser){
 
             alert("Credenciales incorrectas");
+<<<<<<< HEAD
 
+=======
+>>>>>>> feature/blog
             return;
 
         }
