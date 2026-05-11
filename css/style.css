@@ -171,3 +171,11 @@ nav a{
     max-width:800px;
     margin:40px auto;
 }
+
+.ver-btn{
+    background:green;
+    color:white;
+    padding:10px;
+    text-decoration:none;
+    border-radius:5px;
+}

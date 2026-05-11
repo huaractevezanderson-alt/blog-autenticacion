@@ -87,7 +87,9 @@ function mostrarPosts(){
 
                 <h3>${post.title}</h3>
 
-                <p>${post.content}</p>
+                <p>
+                    ${post.content.substring(0, 120)}...
+                </p>
 
                 <small>${post.date}</small>
 
@@ -100,6 +102,10 @@ function mostrarPosts(){
                     <button onclick="eliminarPost(${post.id})">
                         Eliminar
                     </button>
+
+                    <a href="post.html?id=${post.id}" class="ver-btn">
+                        Ver más
+                    </a>
 
                 </div>
 
