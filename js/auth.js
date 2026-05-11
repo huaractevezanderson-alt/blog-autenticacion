@@ -1,4 +1,9 @@
 const registerForm = document.getElementById("registerForm");
+const loginForm = document.getElementById("loginForm");
+
+/* =========================
+   REGISTRO
+========================= */
 
 if(registerForm){
 
@@ -37,6 +42,45 @@ if(registerForm){
         alert("Usuario registrado correctamente");
 
         registerForm.reset();
+
+        window.location.href = "login.html";
+
+    });
+
+}
+
+// login
+
+if(loginForm){
+
+    loginForm.addEventListener("submit", function(e){
+
+        e.preventDefault();
+
+        const email = document.getElementById("loginEmail").value;
+
+        const password = document.getElementById("loginPassword").value;
+
+        let users = JSON.parse(localStorage.getItem("users")) || [];
+
+        const validUser = users.find(user =>
+            user.email === email &&
+            user.password === password
+        );
+
+        if(!validUser){
+
+            alert("Credenciales incorrectas");
+
+            return;
+
+        }
+
+        localStorage.setItem("currentUser", JSON.stringify(validUser));
+
+        alert("Bienvenido");
+
+        window.location.href = "index.html";
 
     });
 
