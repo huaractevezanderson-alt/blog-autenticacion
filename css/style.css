@@ -143,3 +143,25 @@ nav a{
 .post-card small{
     color:gray;
 }
+
+.post-buttons{
+    margin-top:15px;
+    display:flex;
+    gap:10px;
+}
+
+.post-buttons button{
+    padding:10px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    color:white;
+}
+
+.post-buttons button:first-child{
+    background:#007bff;
+}
+
+.post-buttons button:last-child{
+    background:red;
+}
