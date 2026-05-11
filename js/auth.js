@@ -49,7 +49,9 @@ if(registerForm){
 
 }
 
-// login
+/* =========================
+   LOGIN
+========================= */
 
 if(loginForm){
 
@@ -81,6 +83,38 @@ if(loginForm){
         alert("Bienvenido");
 
         window.location.href = "index.html";
+
+    });
+
+}
+
+/* =========================
+   SESION ACTIVA
+========================= */
+
+const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+
+const userName = document.getElementById("userName");
+
+if(currentUser && userName){
+
+    userName.textContent = `Hola, ${currentUser.username}`;
+
+}
+
+/* =========================
+   LOGOUT
+========================= */
+
+const logoutBtn = document.getElementById("logoutBtn");
+
+if(logoutBtn){
+
+    logoutBtn.addEventListener("click", function(){
+
+        localStorage.removeItem("currentUser");
+
+        window.location.href = "login.html";
 
     });
 
